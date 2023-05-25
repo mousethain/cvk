@@ -5,9 +5,9 @@ CEKEXPIRED () {
     today=$(date +d +1day +%Y-%m-%d)
     Exp1=$(curl -sS https://raw.githubusercontent.com/nmousethain/cvk/mouse/permission/ip | grep $MYIP | awk '{print $3}')
     if [[ $today < $Exp1 ]]; then
-    echo -e "\e[32mSCRIPT ANDA EXPIRED!\e[0m"
+    echo -e "\e[32mSSTATUS SCRIPT AKTIF...\e[0m"
     else
-    echo -e "\e[31mSTATUS SCRIPT AKTIF...\e[0m";
+    echo -e "\e[31mSCRIPT ANDA EXPIRED!\e[0m";
     exit 0
 fi
 }
