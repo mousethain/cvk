@@ -11,7 +11,7 @@ CEKEXPIRED () {
     exit 0
 fi
 }
-IZIN=$(curl -sS https://raw.githubusercontent.com/mousethain/cvk/mouse/permission/ip | awk '{print $4}' | grep $MYIP)
+IZIN=$(curl -sS https://raw.githubusercontent.com/mousethain/cvk/mouse/permission/ip | awk '{print $3}' | grep $MYIP)
 if [ $MYIP = $IZIN ]; then
 echo -e "\e[32mPermission Accepted...\e[0m"
 CEKEXPIRED
@@ -26,7 +26,7 @@ echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━�
 echo -e "\E[0;100;33m         • RESTART MENU •          \E[0m"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
-echo -e " [\e[36m•1\e[0m] Restart All Services"
+echo -e " [\e[36m•1\e[0m] Restart All Services
 echo -e " [\e[36m•2\e[0m] Restart OpenSSH"
 echo -e " [\e[36m•3\e[0m] Restart Dropbear"
 echo -e " [\e[36m•4\e[0m] Restart Stunnel4"
