@@ -4,7 +4,7 @@ echo "Checking VPS"
 CEKEXPIRED () {
     today=$(date -d +1day +%Y-%m-%d)
     Exp1=$(curl -sS https://raw.githubusercontent.com/nmousethain/cvk/mouse/permission/ip | grep $MYIP | awk '{print $3}')
-    if [[ $today < $Exp1 ]]; then
+    if [[ $today > $Exp1 ]]; then
     echo -e "\e[32mSTATUS SCRIPT AKTIF...\e[0m"
     else
     echo -e "\e[31mSCRIPT ANDA EXPIRED!\e[0m";
@@ -16,7 +16,7 @@ if [ $MYIP = $IZIN ]; then
 echo -e "\e[32mPermission Accepted...\e[0m"
 CEKEXPIRED
 else
-echo -e "\e[31mPermission Accepted...\e[0m";
+echo -e "\e[31mPermission Denied!\e[0m";
 
 exit 0
 fi
