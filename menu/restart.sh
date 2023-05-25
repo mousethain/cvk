@@ -2,9 +2,9 @@
 MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
 CEKEXPIRED () {
-    today=$(date +d +1day +%Y-%m-%d)
+    today=$(date -d +1day +%Y-%m-%d)
     Exp1=$(curl -sS https://raw.githubusercontent.com/nmousethain/cvk/mouse/permission/ip | grep $MYIP | awk '{print $3}')
-    if [[ $today > $Exp1 ]]; then
+    if [[ $today < $Exp1 ]]; then
     echo -e "\e[32mSTATUS SCRIPT AKTIF...\e[0m"
     else
     echo -e "\e[31mSCRIPT ANDA EXPIRED!\e[0m";
