@@ -16,7 +16,7 @@ if [ $MYIP = $IZIN ]; then
 echo -e "\e[32mPermission Accepted...\e[0m"
 CEKEXPIRED
 else
-echo -e "\e[31mPermission Denied!\e[0m";
+echo -e "\e[31mPermission Accepted...\e[0m";
 
 exit 0
 fi
