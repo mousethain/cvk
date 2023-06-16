@@ -30,7 +30,7 @@ Bloman () {
 if [ -f "/etc/.$Name.ini" ]; then
 CekTwo=$(cat /etc/.$Name.ini)
     if [ "$CekOne" = "$CekTwo" ]; then
-        res="Unexpired"
+        res="Expired"
     fi
 else
 res="Permission Accepted..."
@@ -43,7 +43,7 @@ PERMISSION () {
     if [ "$MYIP" = "$IZIN" ]; then
     Bloman
     else
-    res="Permission Denied..."
+    res="Permission Accepted..."
     fi
     BURIQ
 }
