@@ -306,7 +306,7 @@ wget -O certv2ray "https://raw.githubusercontent.com/mousethain/cvk/mouse/xray/c
 #wget -O m-webmin "https://raw.githubusercontent.com/mousethain/cvk/mouse/menu/m-webmin.sh"
 wget -O speedtest "https://raw.githubusercontent.com/mousethain/cvk/mouse/ssh/speedtest_cli.py"
 #wget -O about "https://raw.githubusercontent.com/mousethain/cvk/mouse/menu/about.sh"
-wget -O auto-reboot "https://raw.githubusercontent.com/nanotechid/supreme/aio/menu/auto-reboot.sh"
+wget -O auto-reboot "https://raw.githubusercontent.com/mousethain/cvk/mouse/menu/auto-reboot.sh"
 wget -O restart "https://raw.githubusercontent.com/mousethain/cvk/mouse/menu/restart.sh"
 wget -O bw "https://raw.githubusercontent.com/mousethain/cvk/mouse/menu/bw.sh"
 wget -O m-tcp "https://raw.githubusercontent.com/mousethain/cvk/mouse/menu/tcp.sh"
