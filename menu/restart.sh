@@ -45,7 +45,6 @@ PERMISSION () {
     else
     res="Permission Denied!"
     fi
-    BURIQ
 }
 red='\e[1;31m'
 green='\e[0;32m'
