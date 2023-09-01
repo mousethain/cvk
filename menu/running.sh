@@ -196,16 +196,16 @@ else
 fi
 # STATUS SERVICE WEBSOCKET TLS
 if [[ $wstls == "running" ]]; then 
-   swstls=" ${GREEN}Running ${NC}( No Error )${NC}"
+   wstls=" ${GREEN}Running ${NC}( No Error )${NC}"
 else
-   swstls="${RED}  Not Running ${NC}  ( Error )${NC}"
+   wstls="${RED}  Not Running ${NC}  ( Error )${NC}"
 fi
 
 # STATUS SERVICE WEBSOCKET DROPBEAR
 if [[ $wsdrop == "running" ]]; then 
-   swsdrop=" ${GREEN}Running ${NC}( No Error )${NC}"
+   wsdrop=" ${GREEN}Running ${NC}( No Error )${NC}"
 else
-   swsdrop="${RED}  Not Running ${NC}  ( Error )${NC}"
+   wsdrop="${RED}  Not Running ${NC}  ( Error )${NC}"
 fi
 
 # STATUS SHADOWSOCKS
@@ -283,7 +283,7 @@ echo -e "❇️ XRAYS Vless TLS         :$status_tls_vless"
 echo -e "❇️ XRAYS Vless None TLS    :$status_nontls_vless"
 echo -e "❇️ XRAYS Trojan            :$status_virus_trojan"
 echo -e "❇️ Shadowsocks             :$status_shadowsocks"
-echo -e "❇️ Websocket TLS           :$swstls"
-echo -e "❇️ Websocket None TLS      :$swstls"
+echo -e "❇️ Websocket TLS           :$wstls"
+echo -e "❇️ Websocket None TLS      :$wstls"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo ""
