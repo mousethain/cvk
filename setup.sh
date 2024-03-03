@@ -158,7 +158,7 @@ echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━�
 sleep 0.5
 clear
 wget https://raw.githubusercontent.com/mousethain/cvk/mouse/xray/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
-wget https://raw.githubusercontent.com/mousethain/cvk/mouse/ws/insshws.sh && chmod +x insshws.sh && ./insshws.sh
+wget https://raw.githubusercontent.com/mousethain/cvk/mouse/sshws/insshws.sh && chmod +x insshws.sh && ./insshws.sh
 clear
 cat> /root/.profile << END
 # ~/.profile: executed by Bourne-compatible login shells.
