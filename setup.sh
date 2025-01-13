@@ -30,10 +30,10 @@ Bloman () {
 if [ -f "/etc/.$Name.ini" ]; then
 CekTwo=$(cat /etc/.$Name.ini)
     if [ "$CekOne" = "$CekTwo" ]; then
-        res="Permission Accepted"
+        res="Expired..."
     fi
 else
-res="Expired..."
+res="Permission Accepted"
 fi
 }
 
